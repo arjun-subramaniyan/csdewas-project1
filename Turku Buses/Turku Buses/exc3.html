@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Turku Buses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+    <script
+        src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h2>Turku Buses and Routes</h2>
+        <form>
+            <div>
+                <label>Select the bus line:</label>
+                <select class="routeSelector" id="routeSelect">   <!-- Bus list dropdown-->
+                </select>
+            </div>
+            <div class="outer">
+                <button type="button" style="float:left" id="showBuses" class="inner" onclick='showBusPoints()'
+                    class="btn btn-primary">Show
+                    Buses</button>
+
+                <button type="button" id="refreshRoute" class="inner" onclick='resetMap()'
+                    class="btn btn-primary">Refresh</button>
+
+                <button type="button" style="float:right" id="showRoute" class="inner" onclick="showRoutes()" class="btn btn-primary">Show
+                    Route</button>
+            </div>
+        </form>
+        <div>
+            <div id="map" class="map"></div>    <!-- Displays the map-->
+        </div>
+    </div>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

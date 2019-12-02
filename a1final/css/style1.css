@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: red;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.header li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  padding: 4px;
+  margin: 2px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 50px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+
+.para {
+    float:right;
+    display: inline-block;
+    text-align: justify;
+}
+.footer {
+  background-color: #0099cc;
+  background-size:;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+#ani {
+  width: 100px;
+  height: 60px;
+  background-color: red;
+  position: relative;
+  outline-color: solid black;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  max-width: 100%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color:red; left:50px; top:0px;}
+  25%  {background-color:yellow; left:400px; top:0px;}
+  50%  {background-color:blue; left:800px; top:0px;}
+  75%  {background-color:green; left:40px; top:0px;}
+  100% {background-color:red; left:50px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color:red; left:50px; top:0px;}
+  25%  {background-color:yellow; left:400px; top:0px;}
+  50%  {background-color:blue; left:800px; top:0px;}
+  75%  {background-color:green; left:400px; top:0px;}
+  100% {background-color:red; left:50px; top:0px;}
+}
+#pan {
+  max-width:50% ;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+#div2 {
+float: right;
+width: 30%;
+height: 70px;
+padding: 10px;
+border: 1px solid #aaaaaa;
+}
+
+#drag1 {
+display: inline-block;
+  float:center;
+    /*margin-left: auto;
+margin-right: auto;*/
+width: 30%;
+}
+
+
+#div1 {
+float: left;
+width: 30%;
+height: 70px;
+padding: 10px;
+border: 1px solid #aaaaaa;
+}
+#sidebar1{
+float:right;
+width:40%;
+  background: #333;
+  text-align: justify;
+color:#fff;
+padding:10px;
+  box-sizing: border-box;
+  margin-right: 5%;
+}
+
+#sidebar2{
+float:left;
+  width:40%;
+  text-align: justify;
+background: #333;
+color:#fff;
+padding:10px;
+  box-sizing: border-box;
+  margin-left:5%;
+}
